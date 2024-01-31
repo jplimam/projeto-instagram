@@ -1,36 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.topo {
+body {
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif !important;
+    background: #FAFAFA;
+    height: 2800px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 54px;
+    background-color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+
+    border-bottom: 1px solid #DBDBDB;
+
+    position: fixed;
+
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+}
+
+footer {
+    display: none;
+    overflow: hidden;
+}
+
+#top .wrapper {
     width: 100%;
     height: 54px;
-    border: 1px solid #DBDBDB;
-    background-color: #FFF;
+    background-color: #FFFFFF;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.logo {
+#top .logo {
+    height: 54px;
+
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
-.logo-nome {
+#top .logo .icon-insta {
+    font-size: 22px;
+    padding-right: 10px;
+    border-right: 1px solid #DBDBDB;
+
+    cursor: pointer;
+}
+
+#top .logo img {
     width: 103px;
     height: 29px;
-}
+    padding-left: 11px;
+    padding-top: 4px;
 
-.logo-barra {
-    background-color: #DBDBDB;
-    width: 1px;
-    height: 22px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.logo-icone {
-    width: 22px;
-    height: 22px;
+    cursor: pointer;
 }
 
 .pesquisa {
@@ -42,10 +77,10 @@
     background-color: #f0f0f0;
     border: 1px solid #cecece;
     border-radius: 2px;
+    cursor: text;
 }
 
 .pesquisa p {
-    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400px;
     color: #979797;
@@ -56,8 +91,85 @@
     justify-content: center;
 }
 
-.icones img {
+.icon-insta {
     width: 22px;
     height: 22px;
     margin: 10px;
+
+    cursor: pointer;
+}
+
+#content {
+    margin-top: 88px;
+
+    width: 100vw;
+    max-width: 935px;
+    height: 2600px;
+    margin-inline: auto;
+}
+
+#content .stories-header {
+    width: 614px;
+    height: 118px;
+
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    background-color: #FFF;
+
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    position: relative;
+
+    margin-top: 34px;
+    margin-bottom: 24px;
+}
+
+#content .stories-box {
+    display: flex;
+}
+
+
+#content .stories-box .stories-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+#content .stories-box .storie-container .img-container {
+    width: 66px;
+    height: 66px;
+
+    background-size: cover;
+    background-image: url(assets/images/stories_background.jpg);
+    background-position: center;
+
+    border-radius: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#content .stories-box .storie-container img {
+    width: 66px;
+    height: 66px;
+    border-radius: 28px;
+
+}
+
+#content .stories-box .storie-container p {
+    height: 19px;
+    color: #262626;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
